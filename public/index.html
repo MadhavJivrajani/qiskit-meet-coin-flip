@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Flip a coin!
+        </title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.5/math.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="index.css">
+
+    <body>
+
+        <div class="nav">
+            <img id="qforest" src="qforest_banner_minimal_dark.png" alt="">
+            <img id="qiskit" src="qiskit.png" alt="">
+        </div>
+            <div class="rules__main">
+
+                <div class="rules__line">
+                    You are in a deadly face off with your enemy in a game of coin flip! The coin starts with heads facing up
+                </div>
+                <div class="rules__line">
+                    The enemy has already made a move and the state of the coin has been modified (or not)! 
+                </div>
+                <div class="rules__line">
+                    You, a brave warrior must make a choice. To either flip the coin or keep it as it is 
+                </div>
+                <div class="rules__line">
+                    Neither your enemy nor you can see the coin 
+                </div>
+                <div class="rules__line">
+                    If after your move, the coin has tails, then you survive, or else... you shall be missed by your loved ones 
+                </div>
+
+            </div>
+            <div class="buttons">
+
+                <button id="flip">Flip!</button>
+                <button id="no_flip">Nah, I'm good</button>
+
+            </div>
+            
+        <script src="app.js"></script>
+    </body>
+</html>

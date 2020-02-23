@@ -1,0 +1,130 @@
+* {
+    margin: none;
+    padding: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #3498db;
+}
+
+.rules__main {
+    margin-top: 10vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(145, 63%, 42%);
+    border-radius: 20px;
+}
+
+
+.rules__line {
+
+    /* margin: 30px; */
+    padding: 20px 10px;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.rules__line:nth-child(1) {
+    background-color: #2bcbba;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    animation: fadeIn 2s ease;
+}
+.rules__line:nth-child(2) {
+    opacity: 0;
+    background-color: #26de81;
+    animation: fadeIn 2s ease 1.5s forwards;
+}.rules__line:nth-child(3) {
+    opacity: 0;
+    background-color: #fed330;
+    animation: fadeIn 2s ease 3.5s forwards;
+}.rules__line:nth-child(4) {
+    opacity: 0;
+    background-color: #fd9644;
+    animation: fadeIn 2s ease 5.5s forwards;
+}
+.rules__line:nth-child(5) {
+    opacity: 0;
+    background-color: #fc5c65;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    animation: fadeIn 2s ease 7.5s forwards;
+}
+.buttons {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    min-width: 100px;
+    min-height: 5vh;
+    margin: 20px;
+    margin-top: 5px;
+    color: black;
+    background-color: #26de81;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    transition: all 0.5s ease;
+}
+button:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.sike {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20vh;
+    font-weight: 700;
+    color: black;
+}
+
+.nav {
+    display: block;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+}
+
+#qforest {
+    width: 10vw;
+}
+
+#qiskit {
+    position: absolute;
+    right: 10vw;
+    width: 10vw;
+}
+
+@media (max-width: 600px) {
+
+    .rules__main {
+        margin: 10px;
+        transform: none;
+    }
+    .rules__line {
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+    #qforest {
+        width: 20vw;
+    }
+    
+    #qiskit {
+        position: absolute;
+        right: 20vw;
+        width: 20vw;
+    }
+
+
+}
