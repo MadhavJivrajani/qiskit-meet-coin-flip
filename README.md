@@ -6,7 +6,7 @@ The whole idea is based off of [IBM Qiskit's repository](https://github.com/Qisk
 This web-app was used to explain quantum superposition at the IBM Qiskit meetup @ PES University, Bangalore. To understand what the game does, make sure to check out the link above!
 
 ## To get and visualize results
-- To install the nescesarry dependencies, run `pip install -r requirements.txt`
+- To install the nescessary dependencies, run `pip install -r requirements.txt`
 
 - The data collected by the app is exported as `data.json`  
 
@@ -14,6 +14,6 @@ This web-app was used to explain quantum superposition at the IBM Qiskit meetup 
 
 - The python file will generate two graphs one after the other, close the first graph to generate the second graph :P
 
-If you find anything wrong with the code, or have any new ideas as to how one can go about explaining concepts related to quantum computing using fun means such as this, please feel free to open an issue! I would be thrilled to head about it :)
+If you find anything wrong with the code, or have any new ideas as to how one can go about explaining concepts related to quantum computing using fun means such as this, please feel free to open an issue! I would be thrilled to read about it :)
 
 Special thanks to [Sparsh Temani](https://github.com/temanisparsh) for designing the frontend! Total madlad. 
