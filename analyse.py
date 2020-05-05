@@ -4,7 +4,6 @@ import random
 import matplotlib.pyplot as plt
 import json
 
-
 with open("data.json") as f:
     info = json.load(f)
 
@@ -41,8 +40,6 @@ def get_classical(data):
 
         qc_classical = circ_classical + meas
 
-
-
         job_sim = execute(qc_classical, backend_sim, shots=1024)
 
         result_sim = job_sim.result().get_counts(qc_classical)
@@ -62,9 +59,7 @@ def get_quantum(data):
     quantum = {"0":0,"1":0}
     for i in data:
         circ_quantum = QuantumCircuit(1)
-
-        circ_quantum.h(0)
-        
+        circ_quantum.h(0)      
         if(i==0):
             circ_quantum.iden(0)
         if(i==1):
@@ -74,11 +69,7 @@ def get_quantum(data):
 
         meas = QuantumCircuit(1, 1)
         meas.measure(0, 0)
-
         qc_quantum = circ_quantum + meas
-
-
-
         job_sim = execute(qc_quantum, backend_sim, shots=1024)
 
         result_sim = job_sim.result().get_counts(qc_quantum)
